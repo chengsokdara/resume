@@ -10,10 +10,10 @@ import Image from "next/image";
 
 export default function Profile() {
   return (
-    <div className="flex flex-col w-full bg-black/75 p-4">
+    <div className="flex flex-col w-full items-center sm:items-start bg-black/75 pl-0 sm:pl-4 py-4">
       <Image
         alt="Avatar"
-        className="rounded-full self-center mb-2"
+        className="rounded-full self-center mb-2 mr-0 sm:mr-4"
         src={avatar}
         priority={true}
         height={150}

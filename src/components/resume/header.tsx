@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row pl-5 pt-3 sm:pl-0 sm:pt-0">
       <div className="flex justify-center self-start mt-2">
         <Image alt="Bookmark Shape" src={bookmarkShape} />
         <h3 className="absolute font-mont font-bold text-xs text-white uppercase mt-5">
