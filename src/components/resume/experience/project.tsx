@@ -7,7 +7,7 @@ type ExperienceProjectPropType = {
 
 export default function ExperienceProject({ data }: ExperienceProjectPropType) {
   return (
-    <ul className="list-disc space-y-5 ps-5 font-mont text-xs">
+    <ul className="list-disc space-y-5 ps-5 font-mont text-sm">
       {data.projects.map((project, idx2) => (
         <div key={idx2} className="flex flex-col">
           <li className="font-semibold">
