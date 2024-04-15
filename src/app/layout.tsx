@@ -21,7 +21,7 @@ const montserratSubrayada = Montserrat_Subrayada({
 export const metadata: Metadata = {
   title: "Sokdara Cheng",
   description: "Sokdara Cheng's Resume",
-  metadataBase: new URL("https://chengsokdara.github.io/resume"),
+  metadataBase: new URL("https://chengsokdara.github.io"),
 };
 
 export default function RootLayout({
