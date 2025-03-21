@@ -29,7 +29,7 @@ export default function ResumeV1() {
           </div>
         </div>
       </section>
-      <aside className="hidden sm:flex flex-col w-[11.25rem]">
+      <aside className="hidden sm:flex flex-col w-[13.75rem]">
         <Profile />
         <div className="flex flex-col pl-5">
           {/* EDUCATION */}

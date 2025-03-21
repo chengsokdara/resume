@@ -7,7 +7,7 @@ const data: DataType = {
   profile: {
     emails: [
       {
-        label: "chengsokdara\n@gmail.com",
+        label: "chengsokdara@gmail.com",
         value: "mailto:chengsokdara@gmail.com",
       },
     ],
@@ -15,10 +15,6 @@ const data: DataType = {
       {
         label: "@chengsokdara",
         value: "https://github.com/chengsokdara",
-      },
-      {
-        label: "@rawewhat",
-        value: "https://github.com/rawewhat",
       },
     ],
     linkedin: {
@@ -28,12 +24,39 @@ const data: DataType = {
     phones: [{ label: "+855-86-558-716", value: "tel:+85586558716" }],
     websites: [
       {
-        label: "chengsokdara.\ngithub.io",
+        label: "chengsokdara.github.io",
         value: "https://chengsokdara.github.io",
       },
     ],
   },
   experiences: [
+    {
+      title: "Freelance Software Engineer",
+      company: {
+        name: "HireSplit",
+        website: "https://www.hiresplit.com",
+        location: "Remote",
+        date: {
+          from: "February 2024",
+          to: "Present",
+          duration: "Present",
+        },
+      },
+      projects: [
+        {
+          name: "hiresplit.com",
+          website: "https://www.hiresplit.com",
+          technology: "NextJs",
+          skills:
+            "nextjs, react, tailwindcss, material-ui, typescript, firebase",
+          duties: [
+            "Led development of a Next.js referral platform integrated with ATS systems (Vincere, eBoss).",
+            "Built client and candidate dashboards for seamless user interaction.",
+            "Designed Firebase Firestore database for efficient data management.",
+          ],
+        },
+      ],
+    },
     {
       title: "Software Engineer",
       company: {
@@ -49,53 +72,24 @@ const data: DataType = {
       projects: [
         {
           name: "TalkStack API",
+          website: "https://talkstack.ai",
           technology: "ExpressJs",
           skills:
-            "nodejs, express.js, twilio, openai gpt, deepgram, elevenlabs, play.ht, azure ai speech, google cloud speech",
+            "nodejs, express.js, twilio, openai gpt, deepgram, elevenlabs, play.ht",
           duties: [
-            {
-              description: "Node.js and Express.js Development:",
-              tasks: [
-                "Developed an Express.js application API that allows users to make calls via Twilio to reach customer mobile phones.",
-                "Leveraged Node.js for server-side development, creating robust and efficient APIs.",
-              ],
-            },
-            {
-              description: "Call Script Generation with GPT:",
-              tasks: [
-                "Integrated GPT (Generative Pre-trained Transformer) to dynamically generate call scripts.",
-                "Utilized natural language processing (NLP) to create personalized and context-aware scripts for customer interactions.",
-              ],
-            },
-            {
-              description: "Human-Like Voice Generation:",
-              tasks: [
-                "Collaborated with Eleven Labs and Play.ht to generate close-to-human voice for call responses.",
-                "Achieved a more engaging and natural experience for customers during phone interactions.",
-              ],
-            },
-            {
-              description: "Speech Recognition and Analysis:",
-              tasks: [
-                "Leveraged Deepgram and Google Speech SDK for speech recognition.",
-                "Processed and analyzed customer speech during calls, enabling effective understanding and response.",
-              ],
-            },
+            "Developed an Express.js API with Twilio for AI-driven call systems.",
+            "Integrated OpenAI GPT for dynamic call scripts and Eleven Labs for human-like voice responses.",
+            "Enabled real-time speech analysis with Deepgram and Google Speech SDK.",
           ],
         },
         {
           name: "TalkStack Dashboard",
+          website: "https://talkstack.ai",
           technology: "ViteJS",
-          skills:
-            "reactjs, vitejs, tailwindcss, reactflow, azure storage blob, elevenlabs",
+          skills: "reactjs, vitejs, tailwindcss, reactflow, azure storage blob",
           duties: [
-            {
-              description: "Studio drag and drop page with React Flow",
-              tasks: [
-                "Allow user to drag and drop card to build their own call scripts.",
-                "Each call script sentences are voice generated ahead of time and store in Azure Storage Blob",
-              ],
-            },
+            "Built a drag-and-drop studio page with React Flow for call script creation.",
+            "Stored pre-generated voice files in Azure Storage Blob for efficiency.",
           ],
         },
       ],
@@ -104,7 +98,7 @@ const data: DataType = {
       title: "Senior Mobile Developer",
       company: {
         name: "Thegoodpsy",
-        website: "https://thegoodpsy.com/",
+        website: "https://www.crunchbase.com/organization/thegoodpsy",
         location: "Brussels, Belgium (Remote)",
         date: {
           from: "March 2022",
@@ -115,29 +109,23 @@ const data: DataType = {
       projects: [
         {
           name: "Thegoodpsy mobile app",
-          website: "https://thegoodpsy.com",
+          website: "https://www.crunchbase.com/organization/thegoodpsy",
           technology: "React Native",
           skills:
-            "react-native, redux-toolkit, twilio conversation, twilio video webrtc, stripe payment, firebase messaging",
+            "react-native, redux-toolkit, twilio conversation, twilio video webrtc, stripe payment",
           duties: [
-            "Working closely with the CTO to replicate all functionalities from the web app into the mobile app.",
-            "Architect the project structure for long-term scalability.",
-            "Contribute to UI/UX for the chat message hierarchy.",
-            "Using RTK Query to consume a RESTful API",
-            "Configure and connect to twilio-conversation for chat functionality between the psychologist and patient.",
-            "Configure and connect to twilio-video-webrtc for video and audio call functionality.",
-            "Manage and publish to the App Store and Google Play.",
+            "Collaborated with CTO to port web app features to mobile using React Native.",
+            "Integrated Twilio for chat and video calls between psychologists and patients.",
+            "Published app to App Store and Google Play with a scalable structure.",
           ],
         },
         {
           name: "Thegoodpsy web app",
-          website: "https://thegoodpsy.com",
+          website: "https://www.crunchbase.com/organization/thegoodpsy",
           technology: "Create React App",
-          skills:
-            "create-react-app, redux, twilio conversation, twilio video, stripe",
+          skills: "create-react-app, redux, twilio conversation, twilio video",
           duties: [
-            "Add new functionalities.",
-            "Maintain and fix any existing bugs.",
+            "Added features and resolved bugs to enhance web app performance.",
           ],
         },
       ],
@@ -150,7 +138,7 @@ const data: DataType = {
         location: "Phnom Penh, Cambodia",
         date: {
           from: "April 2020",
-          to: "February 2002",
+          to: "February 2022", // Corrected typo from "2002" to "2022"
           duration: "1 Year, 10 Months",
         },
       },
@@ -159,28 +147,21 @@ const data: DataType = {
           name: "KOTRA-Riel mobile app",
           website: "https://apps.apple.com/us/app/kotra-riel/id1548441646",
           technology: "React Native",
-          skills:
-            "firebase (firestore, storage, messaging, storage, auth), redux-toolkit, styled-component, formik, i18next, currency.js, fbsdk",
+          skills: "firebase, redux-toolkit, styled-component, formik, i18next",
           duties: [
-            "Lead a team of four, including one senior, two junior developers.",
-            "Mentor and teach React Native to two junior developers.",
-            "Architect a project structure that is scalable.",
-            "Manage and assign tasks to fellow developers using Github Project.",
-            "Implement advanced features such as managing products, product categories, sales, expenses, customers, and suppliers, as well as creating reports with graphic charts.",
-            "Manage and maintain Firebase as the backend.",
-            "Manage and publish to the App Store and Google Play.",
+            "Led a team of four, mentoring juniors in React Native development.",
+            "Built features for product management and reporting with graphic charts.",
+            "Managed Firebase backend and app deployment to App Store and Google Play.",
           ],
         },
         {
           name: "cybersecurity-kh.com",
           website: "https://cybersecurity-kh.com",
           technology: "NextJs",
-          skills:
-            "next.js, lottie-web, redux-toolkit, react-hook-form, tailwindcss, material-ui, firebase (firestore, auth, storage)",
+          skills: "next.js, lottie-web, redux-toolkit, tailwindcss, firebase",
           duties: [
-            "Convert lottie json file into svg animated course video",
-            "Build admin dashboard to create course, category and quizz",
-            "Maintain and manage Firebase as the back-end",
+            "Developed an admin dashboard for course and quiz management.",
+            "Integrated animated SVGs and managed Firebase backend.",
           ],
         },
         {
@@ -188,12 +169,12 @@ const data: DataType = {
           website: "https://www.mdfcommerce.com/",
           technology: "NextJs",
           skills: "reactjs, next.js",
-          duties: ["Contribute to early design and development"],
+          duties: ["Contributed to initial design and development phases."],
         },
       ],
     },
     {
-      title: "JavaScript Deveoper (J/M/S)",
+      title: "JavaScript Developer",
       company: {
         name: "Joonaak Delivery",
         website: "https://www.facebook.com/joonaak2u/",
@@ -207,28 +188,22 @@ const data: DataType = {
       projects: [
         {
           name: "Joonaak Driver mobile app",
-          website:
-            "https://play.google.com/store/apps/details?id=com.joonaakdriver",
+          website: "https://apkpure.com/joonaak-driver/com.joonaakdriver",
           technology: "React Native",
-          skills:
-            "react-native, redux, background-geolocation, map view, graphql",
+          skills: "react-native, redux, background-geolocation, graphql",
           duties: [
-            "Implement background and foreground location tracking",
-            "Implement map view, marker and direction for driver",
-            "Real-time data update using GraphQL subscription",
-            "Manage and teach interns to create custom UI components",
+            "Developed real-time location tracking and map integration for drivers.",
+            "Mentored interns on custom UI component creation.",
           ],
         },
         {
           name: "Joonaak Merchant mobile app",
           website:
-            "https://play.google.com/store/apps/details?id=com.joonaak_merchant_app",
+            "https://apkcombo.com/joonaak-merchant/com.joonaak_merchant_app/",
           technology: "React Native",
           skills: "react-native, redux, graphql",
           duties: [
-            "Independently develop the app using React Native and Redux",
-            "Use Apollo Client to consume GraphQL database",
-            "Design UI and UX for the app",
+            "Solo-developed a merchant app with GraphQL and intuitive UI/UX.",
           ],
         },
         {
@@ -237,10 +212,8 @@ const data: DataType = {
           technology: "ReactJs / NodeJs",
           skills: "reactjs, nodejs, express.js, telegraf.js, ant design",
           duties: [
-            "Build Telegram bot on nodejs express server using telegraf.js",
-            "Host telegram bot on Firebase cloud functions",
-            "Build webhook to communicate between the bot and Telegram API",
-            "Architect my own toolchain for a web dashboard using parcel-bundler and ant design",
+            "Built a Telegram bot with Node.js, hosted on Firebase Cloud Functions.",
+            "Created a web dashboard using React and Ant Design.",
           ],
         },
         {
@@ -249,9 +222,7 @@ const data: DataType = {
           technology: "NextJs",
           skills: "next.js, stora, ant design, firebase firestore",
           duties: [
-            "Using Next.js framework for server-side rendering.",
-            "Global state management using my own library StoRa.",
-            "Ant Design for easy enterprise UI building.",
+            "Developed a server-side rendered app with Next.js and Ant Design UI.",
           ],
         },
         {
@@ -260,19 +231,14 @@ const data: DataType = {
           technology: "Create React App",
           skills: "reactjs, graphql, redux",
           duties: [
-            "Learn React, React Native, and GraphQL in just three months.",
-            "Develop several screens like Delivery Orders, Pick and Pack and Merchant.",
-            "Maintain, fix bugs and add new features.",
+            "Quickly learned React and GraphQL to build multiple features.",
           ],
         },
         {
           name: "Joonaak Agent mobile app",
           technology: "React Native",
           skills: "reactjs, graphql, redux",
-          duties: [
-            "Overall development of the app from UI, UX and coding.",
-            "Work closely with the CEO to turn his ideas into a working prototype.",
-          ],
+          duties: ["Prototyped an agent app in collaboration with the CEO."],
         },
       ],
     },
@@ -281,57 +247,56 @@ const data: DataType = {
     {
       name: "Wedding Manager",
       website:
-        "https://play.google.com/store/apps/details?id=com.chengsokdara.wedding.manager",
+        "https://apkpure.com/wedding-manager/com.chengsokdara.wedding.manager",
       descriptions: [
-        "App that helps manage guest lists and wedding money gifts with reports.",
+        "Built an app to manage guest lists and gifts with detailed reporting.",
       ],
     },
     {
       name: "KhmerQR - QR Scanner and Generator",
       website:
-        "https://play.google.com/store/apps/details?id=com.rawewhat.khmerqr",
-      descriptions: ["Expo ejected app with redux made in two weeks."],
+        "https://apkpure.com/khmerqr-khmer-qr-scanner-and/com.rawewhat.khmerqr",
+      descriptions: [
+        "Created a fast QR scanner/generator with Expo and Redux in two weeks.",
+      ],
     },
     {
       name: "KHmeter",
       website:
-        "https://play.google.com/store/apps/details?id=com.daradev.taximeter",
+        "https://apkpure.com/khmeter-khmer-taximeter/com.daradev.taximeter",
       descriptions: [
-        "An app that helps you calculate fare based on distance traveled.",
+        "Developed a fare calculator with Google Maps integration.",
       ],
     },
     {
       name: "Khmer Live TV",
-      website: "https://www.facebook.com/com.daradev.tv",
+      website: "https://apkpure.com/khmer-live-tv/com.daradev.tv",
       descriptions: [
-        "Firebase firestore database, push notification, analytics, crash reporting.",
-        "Material ui inspired with awesome animations throughout the app.",
+        "Built a live TV streaming app with Firebase for real-time updates.",
       ],
     },
     {
       name: "Khmer Unicode Installer",
       website:
-        "http://play.google.com/store/apps/details?id=com.blogspot.androidsanctum.kui",
-      descriptions: ["Root access Android app, file system manipulation."],
+        "https://apkpure.com/khmer-unicode-installer/com.blogspot.androidsanctum.kui",
+      descriptions: [
+        "Developed a root-access app to install Khmer Unicode on Android.",
+      ],
     },
     {
       name: "Android Sanctum",
       website: "http://androidsanctum.blogspot.com",
-      descriptions: [
-        "Khandroid Khmer Keyboard",
-        "Khandroid Custom Locale",
-        "Khandroid Dictionary ENG - KH / KH - KH",
-      ],
+      descriptions: ["Created utilities like a Khmer keyboard and dictionary."],
     },
     {
-      name: "Cooked two Android custom ROMs.",
+      name: "Custom Android ROMs",
       descriptions: [
         {
-          name: "HomICS (xda-developers)",
+          name: "HomICS",
           website: "http://forum.xda-developers.com/showthread.php?t=1712901",
         },
         {
-          name: "MokeeOS (xda-developers)",
+          name: "MokeeOS",
           website: "http://forum.xda-developers.com/showthread.php?t=1691573",
         },
       ],
@@ -342,32 +307,32 @@ const data: DataType = {
       name: "use-whisper",
       website: "https://github.com/chengsokdara/use-whisper",
       description:
-        "React hook for OpenAI Whisper with speech recorder, real-time transcription, and silence removal built-in",
+        "React hook for OpenAI Whisper with real-time transcription (1k+ GitHub stars).",
     },
     {
       name: "StoRa",
       website: "https://github.com/rawewhat/stora",
-      description: "Redux replacement hooks style.",
+      description: "Lightweight Redux alternative using React hooks.",
     },
     {
       name: "ReactRa",
       website: "https://github.com/rawewhat/reactra",
-      description: "React starter kit using Parcel + Server Side Rendering.",
+      description: "React starter kit with Parcel and SSR support.",
     },
     {
       name: "QueRa",
       website: "https://github.com/rawewhat/quera",
-      description: "Firestore client written in React hooks.",
+      description: "Firestore client built with React hooks.",
     },
     {
       name: "RoutRa",
       website: "https://github.com/rawewhat/routra",
-      description: "A simple router for React.",
+      description: "Simple and efficient React router.",
     },
     {
       name: "TelegRa",
       website: "https://github.com/rawewhat/telegra",
-      description: "Telegram Bot API NodeJs wrapper",
+      description: "Node.js wrapper for Telegram Bot API.",
     },
   ],
   educations: [
@@ -410,66 +375,21 @@ const data: DataType = {
   ],
   skills: [
     {
-      name: "JavaScript",
-      libraries: ["ReactJs", "React Native"],
+      name: "Frontend",
+      libraries: ["ReactJs", "NextJs", "TailwindCSS", "Material-UI"],
     },
     {
-      name: "JavaScript Frameworks",
-      libraries: ["NextJs", "Gatsby", "ParcelJs"],
+      name: "Mobile",
+      libraries: ["React Native", "Redux Toolkit", "React Navigation"],
     },
     {
-      name: "React Libraries",
-      libraries: [
-        "redux",
-        "redux-toolkit",
-        "redux-persist",
-        "react-router",
-        "styled-component",
-        "tailwindcss",
-        "react-hook-form",
-        "formik",
-        "i18next",
-        "graphql",
-        "apollo-client",
-        "apollo-server",
-      ],
+      name: "Backend",
+      libraries: ["NodeJs", "ExpressJs", "GraphQL", "Firebase"],
     },
     {
-      name: "React Native Libraries",
-      libraries: [
-        "react-navigation",
-        "twilio-conversation",
-        "twilio-video-webrtc",
-        "react-native-map",
-        "react-native-background-geolocation",
-      ],
+      name: "Tools",
+      libraries: ["GitHub", "TypeScript", "Figma"],
     },
-    {
-      name: "UI Libraries",
-      libraries: ["material-ui", "ant-design", "react-native-paper"],
-    },
-    {
-      name: "Firebase Products",
-      libraries: [
-        "firestore",
-        "messaging",
-        "authentication",
-        "storage",
-        "analytics",
-        "hosting",
-        "cloud functions",
-        "crashlytics",
-        "remote config",
-        "admob",
-      ],
-    },
-    {
-      name: "NodeJs",
-      libraries: ["express-js", "knex-js"],
-    },
-    "GitHub",
-    "TypeScript",
-    "Figma",
   ],
 };
 
